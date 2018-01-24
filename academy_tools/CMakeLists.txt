@@ -19,4 +19,8 @@ install(TARGETS ${PROJECT_NAME}_joint_marker
 if (CATKIN_ENABLE_TESTING)
   find_package(rostest REQUIRED)
   add_rostest(test/test_joint_marker.test DEPENDENCIES ${PROJECT_NAME}_joint_marker)
+
+  add_rostest_gtest(test_select_joint test/test_select_joint.test test/test_select_joint.cpp)
+  target_link_libraries(test_select_joint ${catkin_LIBRARIES})
+  add_dependencies(test_select_joint ${PROJECT_NAME}_joint_marker ${catkin_EXPORTED_TARGETS})
 endif()

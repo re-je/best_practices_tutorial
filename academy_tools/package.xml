@@ -23,4 +23,5 @@
   <test_depend>abb_irb2400_support</test_depend>
   <test_depend>xacro</test_depend>
   <test_depend>joint_state_publisher</test_depend>
+  <test_depend>rosunit</test_depend>
 </package>
