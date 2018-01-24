@@ -29,3 +29,8 @@ install(TARGETS ${PROJECT_NAME}_colors
 
 install(DIRECTORY include/${PROJECT_NAME}/
         DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+
+if (CATKIN_ENABLE_TESTING)
+  catkin_add_gtest(test_colors test/test_colors.cpp)
+  target_link_libraries(test_colors ${PROJECT_NAME}_colors)
+endif()

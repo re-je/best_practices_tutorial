@@ -17,4 +17,6 @@
   <build_depend>angles</build_depend>
   <exec_depend>angles</exec_depend>
   <exec_depend>libopencv-dev</exec_depend>
+
+  <test_depend>rosunit</test_depend>
 </package>
