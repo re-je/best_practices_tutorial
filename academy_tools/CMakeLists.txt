@@ -11,3 +11,7 @@ add_executable(${PROJECT_NAME}_joint_marker src/joint_marker.cpp)
 target_link_libraries(${PROJECT_NAME}_joint_marker ${catkin_LIBRARIES})
 add_dependencies(${PROJECT_NAME}_joint_marker ${catkin_EXPORTED_TARGETS})
 set_target_properties(${PROJECT_NAME}_joint_marker PROPERTIES OUTPUT_NAME joint_marker PREFIX "")
+
+install(TARGETS ${PROJECT_NAME}_joint_marker
+   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
