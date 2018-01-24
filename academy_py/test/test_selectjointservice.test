@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find abb_irb2400_support)/urdf/irb2400.xacro'" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+  <node name="select_joint_marker" pkg="academy_tools" type="joint_marker"/>
+
+  <test test-name="test_selectjointservice" pkg="academy_py" type="test_selectjointservice.py" name="test_selectjointservice"/>
+</launch>

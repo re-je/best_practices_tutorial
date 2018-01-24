@@ -10,4 +10,8 @@ catkin_package()
 if (CATKIN_ENABLE_TESTING)
   find_package(academy_msgs REQUIRED)
   catkin_add_nosetests(test/test_is_success.py DEPENDENCIES ${academy_msgs_EXPORTED_TARGETS})
+
+  find_package(rostest REQUIRED)
+  find_package(academy_tools REQUIRED)
+  add_rostest(test/test_selectjointservice.test DEPENDENCIES ${academy_tools_EXPORTED_TARGETS})
 endif()
