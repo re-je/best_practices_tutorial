@@ -13,8 +13,8 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <depend>std_msgs</depend>
-  <build_depend>libopencv_dev</build_depend>
+  <build_depend>libopencv-dev</build_depend>
   <build_depend>angles</build_depend>
   <exec_depend>angles</exec_depend>
-  <exec_depend>libopencv_dev</exec_depend>
+  <exec_depend>libopencv-dev</exec_depend>
 </package>
