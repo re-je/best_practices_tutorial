@@ -15,3 +15,8 @@ set_target_properties(${PROJECT_NAME}_joint_marker PROPERTIES OUTPUT_NAME joint_
 install(TARGETS ${PROJECT_NAME}_joint_marker
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+if (CATKIN_ENABLE_TESTING)
+  find_package(rostest REQUIRED)
+  add_rostest(test/test_joint_marker.test DEPENDENCIES ${PROJECT_NAME}_joint_marker)
+endif()

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find abb_irb2400_support)/urdf/irb2400.xacro'" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+  <node name="select_joint_marker" pkg="academy_tools" type="joint_marker">
+    <param name="selected_joint" value="joint_1"/>
+  </node>
+
+  <test test-name="hztest_test" pkg="rostest" type="hztest" name="hztest1">
+    <param name="topic" value="selected_joint_marker" />
+    <param name="hz" value="10.0" />
+    <param name="hzerror" value="0.5" />
+    <param name="test_duration" value="5.0" />
+  </test>
+</launch>

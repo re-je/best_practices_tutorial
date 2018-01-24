@@ -19,4 +19,8 @@
   <exec_depend>academy_msgs</exec_depend>
   <exec_depend>roslaunch</exec_depend>
 
+  <test_depend>rostest</test_depend>
+  <test_depend>abb_irb2400_support</test_depend>
+  <test_depend>xacro</test_depend>
+  <test_depend>joint_state_publisher</test_depend>
 </package>
