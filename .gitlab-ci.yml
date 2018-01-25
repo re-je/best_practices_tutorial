@@ -1,0 +1,17 @@
+image: docker:git # docker and git clients
+
+variables:
+  TMPDIR: "${CI_PROJECT_DIR}.tmp" # work-around needed for certain tests
+
+services:
+  - docker:dind
+
+before_script:
+  - apk add --update bash coreutils tar # install industrial_ci dependencies
+  - git clone --depth 1 https://github.com/ros-industrial/industrial_ci .ci_config
+
+# setup the actual tests
+kinetic:
+  script: .ci_config/gitlab.sh ROS_DISTRO=kinetic
+lunar:
+  script: .ci_config/gitlab.sh ROS_DISTRO=lunar

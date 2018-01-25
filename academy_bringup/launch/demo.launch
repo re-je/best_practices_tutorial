@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find academy_bringup)/launch/robot.launch">
+    <arg name="gui" value="true"/>
+  </include>
+  <include file="$(find academy_bringup)/launch/visualization.launch"/>
+</launch>

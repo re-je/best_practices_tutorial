@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>academy_msgs</name>
+  <version>0.0.0</version>
+  <description>Simple message/service package for ROS-I Academy</description>
+
+  <maintainer email="nadia.hammoudeh-garcia@ipa.fraunhofer.de">Nadia Hammoudeh Garcia</maintainer>
+  <author email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</author>
+  <author email="nadia.hammoudeh-garcia@ipa.fraunhofer.de">Nadia Hammoudeh Garcia</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>

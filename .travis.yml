@@ -1,0 +1,13 @@
+sudo: required 
+dist: trusty # this is the same for all ROS distros!
+language: generic 
+
+# specify some test jobs
+env:
+  - ROS_DISTRO=“kinetic“ # first job: build & test repository for ROS kinetic
+  - ROS_DISTRO=“lunar“   # second job: build & test repository for ROS lunar
+
+install:
+  - git clone --depth 1 https://github.com/ros-industrial/industrial_ci.git .ci_config  
+script: 
+  - .ci_config/travis.sh # will be run for each test job

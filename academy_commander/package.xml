@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>academy_commander</name>
+  <version>0.0.0</version>
+  <description>Simple python-based script package for ROS-I Academy</description>
+
+  <maintainer email="nadia.hammoudeh-garcia@ipa.fraunhofer.de">Nadia Hammoudeh Garcia</maintainer>
+  <author email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</author>
+  <author email="nadia.hammoudeh-garcia@ipa.fraunhofer.de">Nadia Hammoudeh Garcia</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>academy_py</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>python_qt_binding</exec_depend>
+  <exec_depend>python-rospkg</exec_depend>
+  <exec_depend>academy_msgs</exec_depend>
+  <exec_depend>roslaunch</exec_depend>
+  <exec_depend>rviz</exec_depend>
+</package>

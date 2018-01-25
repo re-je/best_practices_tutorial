@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="rvizconfig" default="$(find academy_bringup)/config/config.rviz" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/>
+
+  <node name="select_joint_marker" pkg="academy_tools" type="joint_marker" required="true"/>
+
+  <node name="service_gui" pkg="academy_commander" type="commander" required="true" />
+</launch>
