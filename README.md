@@ -1,6 +1,6 @@
 # Best Practices using ROS
 
-Supporting code for the **Best Practices using ROS** tutorial
+Supporting code for the **Best Practices using ROS** tutorial.
 
 > **ATTENTION**: this repository is **NOT** following the Best Practices
 > conventions. The ROS packages intentionally contain some errors, that have to
