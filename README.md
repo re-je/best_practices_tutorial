@@ -15,4 +15,4 @@ This repository was originally developed by
 
 This EP has received funding from the European Union’s Horizon 2020 research and
 innovation programme under the project [ROSIN](http://rosin-project.eu/) with
-the grant agreement No 732287’.
+the grant agreement No 732287.
