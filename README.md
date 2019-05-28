@@ -6,7 +6,7 @@ Supporting code for the **Best Practices using ROS** tutorial
 > conventions. The ROS packages intentionally contain some errors, that have to
 > be fixed to build and execute the code.
 
-This code is part of the UK ROS-I Training by [re.je](https://re.je).
+This code is part of the ROS-I Training by [re.je](https://re.je).
 
 ## Attribution
 
